@@ -48,6 +48,6 @@ num_frames = 11
 
 # create and save the animation:
 anim = FuncAnimation(fig, update, frames=num_frames, interval=500)
-anim.save('sierpinski_triangle_animation.gif', writer='imagemagick')
+anim.save('images/sierpinski_triangle_animation.gif', writer='imagemagick')
 plt.show()
 # %% END

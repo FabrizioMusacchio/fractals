@@ -38,7 +38,7 @@ def update(b):
 
 ani = FuncAnimation(fig, update, frames=np.linspace(0.1, 4, 100), interval=50)
 writer = PillowWriter(fps=15)
-ani.save('weierstrass_function.gif', writer=writer)
+ani.save('images/weierstrass_function.gif', writer=writer)
 plt.show()
 # %% WEIERSTRASS FUNCTION 2D (STATIC)
 # setting the ranges for calculation:
@@ -64,7 +64,7 @@ fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.plot_surface(X, Y, Z, cmap='viridis')
 plt.tight_layout()
-plt.savefig('weierstrass_fractal.png', dpi=300)
+plt.savefig('images/weierstrass_fractal.png', dpi=300)
 plt.show()
 # %% WEIERSTRASS FUNCTION 2D (ANIMATED)
 # setting the ranges for calculation:
@@ -100,5 +100,5 @@ def update(b):
 
 ani = FuncAnimation(fig, update, frames=np.linspace(1, 20, 200), interval=100)
 writer = PillowWriter(fps=10)
-ani.save('weierstrass_fractal.gif', writer=writer)
+ani.save('images/weierstrass_fractal.gif', writer=writer)
 plt.show()

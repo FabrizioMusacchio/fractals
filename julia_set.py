@@ -1,7 +1,7 @@
 """
 A script to generate an animated gif of the Julia set.
 
-The code for the JULIA SET 2 is taken from the Matlplotlib documentation 
+The code for the JULIA SET 2 is taken from the Matplotlib documentation 
 website: https://matplotlib.org/matplotblog/posts/animated-fractals/?ssp=1&darkschemeovr=1&setlang=de-DE&safesearch=moderate
 
 author: Fabrizio Musacchio (fabriziomusacchio.com)
@@ -68,7 +68,7 @@ def update(frame):
 
 # create and save the animation:
 anim = FuncAnimation(fig, update, frames=len(c_values), interval=100)
-anim.save('julia_set_animation.gif', writer='pillow', dpi=120)
+anim.save('images/julia_set_animation.gif', writer='pillow', dpi=120)
 plt.show()
 # %% JULIA SET 2:
 # define parameters:
@@ -131,4 +131,4 @@ def animate(i):
     return [img]
 
 anim = animation.FuncAnimation(fig, animate, frames=frames, interval=50, blit=True)
-anim.save('julia_set_animation_2.gif', writer='imagemagick')
+anim.save('images/julia_set_animation_2.gif', writer='imagemagick')

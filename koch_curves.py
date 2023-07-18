@@ -67,7 +67,7 @@ def update(frame):
     ax.text(0.02, 0.95, 'Depth: {}'.format(current_depth), transform=ax.transAxes, color='black', fontsize=12)
 
 anim = FuncAnimation(fig, update, frames=120, interval=100)
-anim.save('koch_snowflake_animation.gif', writer='pillow', fps=60)
+anim.save('images/koch_snowflake_animation.gif', writer='pillow', fps=60)
 plt.show()
 # %% KOCH SNOWFLAKE ANIMATION W/ CHANGING COLORS
 def koch_snowflake(ax, p1, p2, depth=0, color='b'):
@@ -130,6 +130,6 @@ def update(frame):
     ax.text(0.02, 0.95, 'Depth: {}'.format(current_depth), transform=ax.transAxes, color='black', fontsize=12)
 
 anim = FuncAnimation(fig, update, frames=100, interval=100)
-anim.save('koch_snowflake_animation_color.gif', writer='pillow', fps=60)
+anim.save('images/koch_snowflake_animation_color.gif', writer='pillow', fps=60)
 plt.show()
 # %% END

@@ -41,5 +41,5 @@ def update(frame):
 
 # Set up the animation and save as GIF:
 anim = FuncAnimation(fig, update, frames=15, init_func=init, blit=True)
-anim.save('takagi_animation.gif', writer='pillow', dpi=300)
+anim.save('images/takagi_animation.gif', writer='pillow', dpi=300)
 plt.show()
